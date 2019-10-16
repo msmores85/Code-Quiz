@@ -1,0 +1,80 @@
+li {
+  display: inline;
+}
+
+#nav1 {
+  float: left;
+}
+
+#nav2 {
+  float: right;
+  padding-right: 40px;
+}
+
+
+#main {
+  text-align: center;
+  margin-top: 20%;
+}
+
+#main2 {
+  text-align: center;
+  margin-top: 20%;
+}
+
+#initialize {
+  text-align: center;
+}
+
+
+#start {
+  background-color: purple; 
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  
+}
+
+
+#back {
+  background-color: purple; 
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+#clear {
+  background-color: purple; 
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+
+
+
+
+
+/*The following media queries will allow the screen to be responsive*/
+@media screen and (max-width: 640px) {
+    body {
+      font-size: 12px;
+      line-height: 23px;
+    }
+    #mainhead {
+      position: static;
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 14px;
+      line-height: 25px;
+    }
+  }
+  
+  @media screen and (max-width: 980px) {
+    body {
+      font-size: 18px; 
+      line-height: 27px; 
+    }
+  }
