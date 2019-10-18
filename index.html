@@ -12,7 +12,9 @@
         <nav>
                 <ul>
                         <li id="nav1"><a href="highscores.html">View High Scores</a></li>
-                        <li id="nav2">Time:</li>
+                        <li id="nav2">
+                            <div id = "timer"></div>
+                        </li>
                     </ul>
         </nav>
         <br>
@@ -21,15 +23,16 @@
         <div id="main">
            <h1>Coding Quiz Challenge</h1> 
            <p>Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your scores/time by ten seconds!</p>
+           <div id="initialize">
+               <button id="start">Start Quiz</button>
+            </div>
         </div>
-        <div id="initialize">
-            <button id="start">Start Quiz</button> 
-        </div>
+        
 
 
 
 
-        <script src="http://code.jquery.com jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="assets/questions.js"></script>
         <script src="assets/script.js"></script>
     </body>
