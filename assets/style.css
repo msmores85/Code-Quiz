@@ -1,7 +1,3 @@
-li {
-  display: inline;
-}
-
 #nav1 {
   float: left;
 }
@@ -11,6 +7,12 @@ li {
   padding-right: 40px;
 }
 
+button {
+  background-color: purple; 
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+}
 
 #main {
   text-align: center;
@@ -18,6 +20,7 @@ li {
 }
 
 #main2 {
+  display: block;
   text-align: center;
   margin-top: 20%;
 }
@@ -27,30 +30,45 @@ li {
 }
 
 
-#start {
-  background-color: purple; 
-  color: white;
-  border-radius: 15px;
-  padding: 5px;
-  
+#questionPage1{
+  display: none;
+  margin-top: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
-
-#back {
-  background-color: purple; 
-  color: white;
-  border-radius: 15px;
-  padding: 5px;
+/*To display list items: (Link used: https://stackoverflow.com/questions/486211/ul-list-style-not-applying)*/
+li{
+  display: list-item;
 }
 
-#clear {
-  background-color: purple; 
-  color: white;
-  border-radius: 15px;
-  padding: 5px;
+#questionPage2{
+  display: none;
+  margin-top: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 
+#questionPage3{
+  display: none;
+  margin-top: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
 
+#questionPage4{
+  display: none;
+  margin-top: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+#questionPage5{
+  display: none;
+  margin-top: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
 
 
 
