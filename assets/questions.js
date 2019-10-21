@@ -5,27 +5,27 @@
 var questions = [
     {
         title: "Commonly used data types DO NOT include:", 
-        choices: ["strings", "booleans", "alerts", "numbers"],
+        choices: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
         answer: "alerts"
     }, 
     {
         title: "The condition in an if / else statement is enclosed within ________.",
-        choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
+        choices: ["1. quotes", "2. curly brackets", "3. parentheses", "4. square brackets"],
         answer: "alerts"
     },
     {
         title: "Arrays in JavaScript can be used to store _______.",
-        choices: ["numbers and strings", "other arrays", "booleans", "all of the above"],
+        choices: ["1. numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"],
         answer: "all of the above"
     }, 
     {
         title: "String values must be enclosed within ______ when being assigned to variables.", 
-        choices: ["commas", "curly brackets", "quotes", "parentheses"],
+        choices: ["1. commas", "2. curly brackets", "3. quotes", "4. parentheses"],
         answer: "quotes"
     }, 
     {
         title: "A very useful tool used during development and debugging for printing cotent to the debugger is:", 
-        choices: ["JavaScript", "terminal/bash", "for loops", "console.log"], 
+        choices: ["1. JavaScript", "2. terminal/bash", "3. for loops", "4. console.log"], 
         answer: "console.log"
     }
 
@@ -62,8 +62,6 @@ startButton.addEventListener("click", function(){
 //The following are additional variables to hide elements on the page:
 var startPage = document.querySelector("#main");
 
-
-
 //The following are functions to render the questions on the page: 
 //The following function hides the main div created  the style.display = "none" component from: https://www.geeksforgeeks.org/hide-or-show-elements-in-html-using-display-property/
 startButton.addEventListener("click", function(){
@@ -73,6 +71,12 @@ startButton.addEventListener("click", function(){
 
 //The following code is to render the question answers on the page:
 var question1Div = document.querySelector("#questionPage1");
+var question2Div = document.querySelector("questionPage2");
+var question3Div = document.querySelector("questionPage3");
+var question4Div = document.querySelector("questionPage4");
+var question5Div = document.querySelector("questionPage5");
+
+
 
 startButton.addEventListener("click", function(){
     //Question 1 displayed: 
@@ -82,7 +86,7 @@ startButton.addEventListener("click", function(){
     var list1 = document.querySelector("#list1");
     
     //Question1 Answers displayed:
-    var qa1 = questions[0].choices[0]; 
+    var qa1 = questions[0].choices[0];
     $("#q1a1").append(qa1);
     var qa2 = questions[0].choices[1];
     $("#q1a2").append(qa2);
@@ -91,10 +95,39 @@ startButton.addEventListener("click", function(){
     var qa4 = questions[0].choices[3]; 
     $("#q1a4").append(qa4);
 
+    //Conditions for the buttons: 
+    qa1.addEventListener("click", function(){
+        if(qa1 === answer1){
+            var correct = document.createElement("p");
+            question1Div.append("Correct");
+        } else {
+            var wrong = document.createElement("p");
+            question1Div.append("Wrong");
+        }
+    }); 
+    qa2.addeventListener("click", function(){
+        if(qa2 === answer1){
+            question1Div.append("Correct");
+        } else {
+            question1Div.append("Wrong");
+        }
+    });
+
 })
 
-var answer1 = questions[0].answer;
-var numberClicked = "";
+/*var answer1 = questions[0].answer;
+
+    if(qa1 === answer1 || qa2 === answer1 || qa3 === answer1 || qa4 === answer1){
+        var correct = document.createElement("p");
+        question1Div.append("Correct");
+    } else {
+        var wrong = document.createElement("p");
+        question1Div.append("Wrong");
+    }
+    */
+
+/*var numberClicked = "";
+
 
 numberClicked.addEventListener("click", function(){
     //Answer: 
@@ -106,10 +139,18 @@ numberClicked.addEventListener("click", function(){
         question1Div.append("Incorrect");
     }
 })
+*/
+
 
 //Incorrect answers - subtracted time from timer.
 //Quiz stops when all answers answered or timer reaches 0.
-//Addition of points to local storage
+//Addition of points to local storage - will require a parseInt of some kind
+
+
+//All Done Div:
+//All done! Header
+//Your final score is ____. paragraph with number input from local storage.
+//Enter initials with textarea and submit button with onclick event to Highscores page
 //Display for overall points
 //Textbox for the user to type initials into
 

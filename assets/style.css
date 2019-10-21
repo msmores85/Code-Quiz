@@ -1,10 +1,12 @@
 #nav1 {
   float: left;
+  display: inline;
 }
 
 #nav2 {
   float: right;
   padding-right: 40px;
+  display: inline;
 }
 
 button {
@@ -37,9 +39,9 @@ button {
   margin-left: 20%;
 }
 
-/*To display list items: (Link used: https://stackoverflow.com/questions/486211/ul-list-style-not-applying)*/
-li{
-  display: list-item;
+/*To display the list item without bullet points or numbers - from link: https://www.computerhope.com/issues/ch001704.htm*/
+li {
+  list-style: none;
 }
 
 #questionPage2{
@@ -70,29 +72,20 @@ li{
   margin-left: 20%;
 }
 
-
+#resultsPage{
+  display: none;
+  margin-top: 20%;
+  margin-right: 20%;
+  margin-left: 20%;
+}
 
 
 /*The following media queries will allow the screen to be responsive*/
 @media screen and (max-width: 640px) {
-    body {
-      font-size: 12px;
-      line-height: 23px;
-    }
-    #mainhead {
-      position: static;
   }
   
   @media screen and (max-width: 768px) {
-    body {
-      font-size: 14px;
-      line-height: 25px;
-    }
   }
   
   @media screen and (max-width: 980px) {
-    body {
-      font-size: 18px; 
-      line-height: 27px; 
-    }
   }
