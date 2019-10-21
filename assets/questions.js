@@ -162,3 +162,8 @@ numberClicked.addEventListener("click", function(){
 //Using local storage to house the user's highscores
 //Rendering highscores from local storage onto the Highscores page
 //Clearing the highscores with a button click
+
+$("#clear").on("click", function(){
+    var highscoresDiv = $("#highscores");
+    highscoresDiv.empty();
+})
