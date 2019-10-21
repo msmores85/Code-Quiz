@@ -6,27 +6,27 @@ var questions = [
     {
         title: "Commonly used data types DO NOT include:", 
         choices: ["1. strings", "2. booleans", "3. alerts", "4. numbers"],
-        answer: "alerts"
+        answer: "3. alerts"
     }, 
     {
         title: "The condition in an if / else statement is enclosed within ________.",
         choices: ["1. quotes", "2. curly brackets", "3. parentheses", "4. square brackets"],
-        answer: "alerts"
+        answer: "2. curly brackets"
     },
     {
         title: "Arrays in JavaScript can be used to store _______.",
         choices: ["1. numbers and strings", "2. other arrays", "3. booleans", "4. all of the above"],
-        answer: "all of the above"
+        answer: "4. all of the above"
     }, 
     {
         title: "String values must be enclosed within ______ when being assigned to variables.", 
         choices: ["1. commas", "2. curly brackets", "3. quotes", "4. parentheses"],
-        answer: "quotes"
+        answer: "3. quotes"
     }, 
     {
         title: "A very useful tool used during development and debugging for printing cotent to the debugger is:", 
         choices: ["1. JavaScript", "2. terminal/bash", "3. for loops", "4. console.log"], 
-        answer: "console.log"
+        answer: "4. console.log"
     }
 
 ];
@@ -71,10 +71,10 @@ startButton.addEventListener("click", function(){
 
 //The following code is to render the question answers on the page:
 var question1Div = document.querySelector("#questionPage1");
-var question2Div = document.querySelector("questionPage2");
-var question3Div = document.querySelector("questionPage3");
-var question4Div = document.querySelector("questionPage4");
-var question5Div = document.querySelector("questionPage5");
+var question2Div = document.querySelector("#questionPage2");
+var question3Div = document.querySelector("#questionPage3");
+var question4Div = document.querySelector("#questionPage4");
+var question5Div = document.querySelector("#questionPage5");
 
 
 
@@ -84,7 +84,8 @@ startButton.addEventListener("click", function(){
     var question1 = questions[0].title;
     $("#question1").append(question1);
     var list1 = document.querySelector("#list1");
-    
+
+
     //Question1 Answers displayed:
     var qa1 = questions[0].choices[0];
     $("#q1a1").append(qa1);
@@ -94,9 +95,11 @@ startButton.addEventListener("click", function(){
     $("#q1a3").append(qa3);
     var qa4 = questions[0].choices[3]; 
     $("#q1a4").append(qa4);
+    
+    
 
     //Conditions for the buttons: 
-    qa1.addEventListener("click", function(){
+   /* qa1.addEventListener("click", function(){
         if(qa1 === answer1){
             var correct = document.createElement("p");
             question1Div.append("Correct");
@@ -111,7 +114,7 @@ startButton.addEventListener("click", function(){
         } else {
             question1Div.append("Wrong");
         }
-    });
+    });*/
 
 })
 
