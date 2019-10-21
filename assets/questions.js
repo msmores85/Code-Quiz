@@ -40,6 +40,8 @@ var startButton = document.getElementById("start");
 var seconds = 75;
 var endTime = 0;
 
+
+
 //The .addEventListener function causes the application to listen for the button to click.
 //When the button is clicked, the timer begins to countdown from 75 seconds until it reaches 0.
 startButton.addEventListener("click", function(){
@@ -52,6 +54,9 @@ startButton.addEventListener("click", function(){
         
             if(seconds <= 0) {
                 clearInterval(myCount);
+                question1Div.style.display = "none";
+                var allDone = document.querySelector("#resultsPage");
+                allDone.style.display = "block";
             };
         //}) console.log(seconds);
     },1000);
@@ -59,7 +64,7 @@ startButton.addEventListener("click", function(){
 });
 
 
-//The following are additional variables to hide elements on the page:
+//The following is a variable for the start page:
 var startPage = document.querySelector("#main");
 
 //The following are functions to render the questions on the page: 
